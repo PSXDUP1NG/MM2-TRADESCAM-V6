@@ -1,3 +1,4 @@
+getgenv().gui = false
 
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 local Window = OrionLib:MakeWindow({Name = "SCRIPTING HUB https://discord.gg/nxC8hzWy8z", HidePremium = false, IntroText = "SCRIPTING HUB", SaveConfig = true, ConfigFolder = "OrionTest"})
